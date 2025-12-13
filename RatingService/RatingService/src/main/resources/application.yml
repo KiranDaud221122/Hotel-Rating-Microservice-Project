@@ -1,0 +1,40 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: RATINGSERVICE
+
+  config:
+    import: optional:configserver:http://localhost:8085
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: microservices
+
+      client:
+        registration:
+          my-internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            client-id: 0oay94tqsdIElrdyf697
+            client-secret: 3Ty857GLqOsA5geGrJIMnmKEl_zAIjp9eHxeH7jB3bjH1CRzHQZVdTvhS0w-E0mJ
+            scope:
+              - internal
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+okta:
+  oauth2:
+    issuer: https://integrator-8521026.okta.com/oauth2/default
+    audience: api://default
