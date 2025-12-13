@@ -81,7 +81,7 @@ Databases
 http://localhost:8761
 
 3️⃣ Access APIs via Gateway
-http://localhost:8080
+http://localhost:8084
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 📂 Project Structure
