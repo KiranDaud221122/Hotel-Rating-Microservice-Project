@@ -104,12 +104,12 @@ Each service is independently deployable and follows clean coding standards.
 * Practical knowledge of **Spring Boot & Microservices**
 * Ability to design scalable and maintainable systems
 * Industry-relevant coding practices
+* Circuit breaker (Resilience4j)
 
 📌 Future Enhancements
 
 * Docker & Docker Compose
 * Centralized logging (ELK Stack)
-* Circuit breaker (Resilience4j)
 * API documentation (Swagger / OpenAPI)
 
 👤 Author
